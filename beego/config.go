@@ -194,7 +194,7 @@ func init() {
 	// initialize default configurations
 	AppPath, _ = filepath.Abs(filepath.Dir(os.Args[0]))
 
-	AppConfigPath = filepath.Join(AppPath, "conf", "app.conf")
+	AppConfigPath = filepath.Join(AppPath, "conf", "develop", "app.conf")
 	if utils.FileExists(AppConfigPath) == false {
 		AppConfigPath = filepath.Join(AppPath, "conf", "app.conf")
 	}
